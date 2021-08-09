@@ -1,0 +1,328 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: DeterminationMono;
+    src: url(../fonts/determinationmonoweb-webfont.ttf);
+}
+
+@keyframes appear{
+    from{opacity:0%;}
+    to{opacity:100%;}
+}
+
+@keyframes rotate{
+    100% {
+        transform:rotateZ(360deg);
+    }
+}
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+/* --- Header ---- */
+
+#name{
+    font-size:150%;
+    animation: appear;
+    animation-duration:1s;
+}
+
+#name h1{
+    font-size:400%;
+}
+
+#elements img{
+    height:50%;
+    width:15%;
+}
+
+#e1{
+    opacity: 0%;
+    animation:appear 1s,rotate 1s;
+    animation-delay:1s;
+    animation-fill-mode: forwards;
+}
+
+#e2{
+    opacity: 0%;
+    animation:appear 1s,rotate 1s;
+    animation-delay:2s;
+    animation-fill-mode: forwards;
+}
+
+#e3{
+    opacity: 0%;
+    animation:appear 1s,rotate 1s;
+    animation-delay:3s;
+    animation-fill-mode: forwards;
+}
+
+/* --- Custom ---- */
+
+.color1{
+    color:#546A7B;
+}
+
+.bg-color3{
+    background-color: #283845;
+}
+
+.color2{
+    color:#C6C5B9;
+}
+
+/* Navbar offset for scrolling */
+
+section:before {
+    height: 54px;
+    content: "";
+    display:block;
+}
+
+.bg-stripped{
+    background-size: 16px 16px;
+    background-image:
+       -webkit-repeating-linear-gradient(-45deg, black, black 1px, transparent 1px, transparent 5px);
+    background-image:
+       -moz-repeating-linear-gradient(-45deg, black, black 1px, transparent 1px, transparent 5px);
+    background-image:
+       -o-repeating-linear-gradient(-45deg, black, black 1px, transparent 1px, transparent 5px);
+    background-image:
+       repeating-linear-gradient(-45deg, black, black 1px, transparent 1px, transparent 5px);
+}
+
+/* Triangule clip-path */
+
+.box {
+    height:100%;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.inverted-box {
+    height:100%;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.wrapper{
+    position: relative;
+}
+
+.content{
+    position: relative;
+    z-index: 100;
+}
+
+.background{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -100;
+}
+
+.background-end{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    z-index: -100;
+}
+
+.shadow-wrap{
+    filter: drop-shadow(10px 5px 5px rgba(29, 29, 29, 0.5));
+}
+
+.shadow-wrap-end{
+    filter: drop-shadow(-20px 5px 5px rgba(29, 29, 29, 0.5));
+}
+
+
+
+/* ------- PROJECTS ------- */
+
+.card-text::after,.tools::after{
+    content:" ";
+    height:2px;
+    margin-top:10px;
+    display:block;
+    background-color:rgb(29, 29, 43);
+    margin-bottom:10px;
+}
+
+.tools img:hover{
+    animation:wiggle 2s infinite;
+}
+
+#projects .card .btn:hover span{
+   display:none;
+}
+#projects .card .btn:hover::after{
+    content:"Launch Site! :)";
+ }
+
+ #projects .card-img-top{
+    cursor:pointer;
+ }
+
+/*-- TODO: make overflow hidden on smaller screens --*/
+
+section{
+    overflow-x:hidden;
+}
+
+section::-webkit-scrollbar {
+    width: 0px;
+    height:0px;
+    background: transparent; 
+}
+
+/*---- Image Zoom ---- */
+
+@keyframes image {
+    0%{
+        transform:translate(-150%);
+    }
+
+    100%{
+        transform:translate(0%);
+    }
+}
+
+.image{
+  
+    height: 100vh;
+    width:100vw;
+    position: fixed;
+    top:0;
+    background-color: rgb(0, 0, 0,0.7);
+    z-index:2000;
+    transform: translate(-100%);
+    opacity:0;
+    transition:all .5s ease-in-out;
+}
+
+.image h1{
+    position:fixed;
+    top:0;
+    right:2%;
+    cursor: pointer;
+    z-index: 20001;
+    color:white;
+}
+
+.image img{
+    object-fit: cover;
+    width:70%;
+    transform:translate(-150%);
+}
+
+.image.active{
+    transform:translate(0);
+    opacity:100%;
+}
+
+.image.active img{
+    animation:image 1s;
+    animation-delay:.5s;
+    animation-fill-mode: forwards;
+}
+
+/* ---- GAMES SECTION ----- */
+
+#games{
+    font-family:"DeterminationMono";
+    font-weight:100;
+}
+
+#games .card-img{
+    width:100%;
+    height:auto;
+}
+
+@supports (object-fit: cover){
+    #games .card-img{
+        width:100%;
+        min-height: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+/* --- SKILLS ---- */
+
+#skills img:hover{
+    animation:wiggle 2s infinite;
+}
+
+.dt{
+    font-family: "DeterminationMono";
+}
+
+/* --- Art --- */
+
+.clickable{
+    cursor: pointer;
+}
+
+
+#art img{
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.double img{
+     height:100%;
+ }
+
+.double{
+    display: inline-block;
+    height:100px;
+}
+
+body{
+    background-color: #393D3F;
+}
+
+@media only screen and (max-width:1200px) {
+
+    .tools h5,h6{
+        font-size:100% !important;
+    }
+
+    .tools .col-2{
+        width:90px;
+    }
+
+    .image img{
+        width:80%;
+    }
+    
+}
+
+
+

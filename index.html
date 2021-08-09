@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <title>DarKaRo's Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#art">Art</a>
+                    <a class="nav-link" href="#aboutme">About me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header
+        class="container-fluid bg-dark min-vh-100 text-white d-flex justify-content-center align-items-center mb-0 bg-stripped">
+        <div class="w-100">
+            <div id="name" class="d-flex flex-column justify-content-center align-items-center pb-5 text-center">
+                <h1 class="color2 fw-lighter">DarKaRo</h1>
+                <p class="color2 fw-lighter">Full Stack Developer, Game Developer and Pixel Artist</p>
+            </div>
+            <div class="d-flex justify-content-around" id="elements">
+                <img src="./img/c-sharp-logo.png" alt="c-sharp-logo" id="e1">
+                <img id="e2" src="./img/unity-logo.png" alt="unity-logo"></img>
+                <img id="e3" src="./img/shyren.gif" alt="sprite"></img>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <div class="wrapper">
+        <section id="projects" class="content min-vh-100 color2 text-center container">
+            <div class="row gy-5">
+                <h1 data-aos="fade-up" class="fw-lighter pb-5">Welcome! Here are some of my projects.</h1>
+                <div data-aos="fade-right" data-aos-delay="500" data-aos-easing="ease-out" class="col-md-5 ">
+                    <div class="card p-1 shadow bg-color3" style="width: 100%;">
+                        <img src="./img/project1.png" class="card-img-top clickable" alt="...">
+                        <div class="card-body p-5">
+                            <h3 class="card-title fw-lighter">Restaurant OnePage</h3>
+                            <p class="card-text lead">All sections in a single page.</p>
+                            <div class="tools">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <div class="col-3 ">
+                                        <img class="img-fluid" src="./img/html-logo.png" alt="">
+                                        <h5 class="fw-lighter">HTML</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/CSS3-Logo.png" alt="">
+                                        <h5 class="fw-lighter">CSS</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://darkaror.github.io/actividad2-onepage/" target="_blank" class="btn"
+                                style="background-color:#B8B08D;"><span>Launch Site</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="1000" data-aos-easing="ease-out" class="col-md-5 offset-md-2">
+                    <div class="card p-1 shadow bg-color3" style="width: 100%;">
+                        <img src="./img/project2.png" class="card-img-top clickable" alt="...">
+                        <div class="card-body p-5">
+                            <h3 class="card-title fw-lighter">Restaurant MultiPage</h3>
+                            <p class="card-text lead">All sections in multiple pages.</p>
+                            <div class="tools">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/html-logo.png" alt="">
+                                        <h5 class="fw-lighter">HTML</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/CSS3-Logo.png" alt="">
+                                        <h5 class="fw-lighter">CSS</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://darkaror.github.io/actividad1-6-secciones/" target="_blank" class="btn"
+                                style="background-color:#B8B08D;"><span>Launch Site</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up-right" data-aos-delay="500" data-aos-easing="ease-out" class="col-md-5 ">
+                    <div class="card p-1 shadow bg-color3" style="width: 100%;">
+                        <img src="./img/project3.png" class="card-img-top clickable" alt="...">
+                        <div class="card-body p-5">
+                            <h3 class="card-title fw-lighter">Smash Bros Ultimate Website</h3>
+                            <p class="card-text lead">Bootstrap Webpage</p>
+                            <div class="tools">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/html-logo.png" alt="">
+                                        <h5 class="fw-lighter">HTML</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/CSS3-Logo.png" alt="">
+                                        <h5 class="fw-lighter">CSS</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/Bootstrap-logo.png" alt="">
+                                        <h6 class="fw-lighter">BOOTSTRAP</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://darkaror.github.io/actividad3-bootstrap/" target="_blank" class="btn"
+                                style="background-color:#B8B08D;"><span>Launch Site</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up-left" data-aos-delay="1000" data-aos-easing="ease-out"
+                    class="col-md-5 offset-md-2">
+                    <div class="card p-1 shadow bg-color3" style="width: 100%;">
+                        <img src="./img/project4.png" class="card-img-top clickable" alt="...">
+                        <div class="card-body p-5">
+                            <h3 class="card-title fw-lighter">Sonic Adventure 2 Website</h3>
+                            <p class="card-text lead">Materialize Webpage</p>
+                            <div class="tools">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/html-logo.png" alt="">
+                                        <h5 class="fw-lighter">HTML</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/CSS3-Logo.png" alt="">
+                                        <h5 class="fw-lighter">CSS</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/materialize-logo.png" alt="">
+                                        <h6 class="fw-lighter">MATERIALIZE</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://darkaror.github.io/actividad3-materialize/" target="_blank" class="btn"
+                                style="background-color:#B8B08D;"><span>Launch Site</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up-right" data-aos-delay="1000" data-aos-easing="ease-out" class="col-md-5">
+                    <div class="card p-1 shadow bg-color3" style="width: 100%;">
+                        <img src="./img/project5.png" class="card-img-top clickable" alt="...">
+                        <div class="card-body p-5">
+                            <h3 class="card-title fw-lighter">Gucci Website</h3>
+                            <p class="card-text lead">OnePage Fashion Webpage</p>
+                            <div class="tools">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/html-logo.png" alt="">
+                                        <h5 class="fw-lighter">HTML</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/CSS3-Logo.png" alt="">
+                                        <h5 class="fw-lighter">CSS</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/Bootstrap-logo.png" alt="">
+                                        <h6 class="fw-lighter">BOOTSTRAP</h6>
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/JavaScript-logo.png" alt="">
+                                        <h6 class="fw-lighter">JAVASCRIPT</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://darkaror.github.io/actividad5-onepage-modas/" target="_blank" class="btn"
+                                style="background-color:#B8B08D;"><span>Launch Site</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up-left" data-aos-delay="500" data-aos-easing="ease-out"
+                    class="col-md-5 offset-md-2">
+                    <div class="card p-1 shadow bg-color3" style="width: 100%;">
+                        <img src="./img/project6.png" class="card-img-top clickable" alt="...">
+                        <div class="card-body p-5">
+                            <h3 class="card-title fw-lighter">CryptOnline</h3>
+                            <p class="card-text lead">OnePage Cryptocurrency Website</p>
+                            <div class="tools">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/html-logo.png" alt="">
+                                        <h5 class="fw-lighter">HTML</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/CSS3-Logo.png" alt="">
+                                        <h5 class="fw-lighter">CSS</h5>
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="./img/Bootstrap-logo.png" alt="">
+                                        <h6 class="fw-lighter">BOOTSTRAP</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://darkaror.github.io/actividad4-criptomoneda/" target="_blank" class="btn"
+                                style="background-color:#B8B08D;"><span>Launch Site</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="shadow-wrap background h-50 w-100">
+            <div class="box bg-dark bg-stripped w-100">
+            </div>
+        </div>
+        <div class="shadow-wrap-end background-end h-50 w-100">
+            <div class="inverted-box bg-dark bg-stripped w-100">
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Zoom  -->
+    <section class="image  d-flex align-items-center justify-content-center">
+        <h1>X</h1>
+        <img class="rounded" src="./img/project1.png" alt="">
+    </section>
+
+    <section id="games" class="min-vh-100 bg-dark bg-stripped container-fluid text-white text-center">
+        <h1>Games and apps <img src="./img/shyren.gif" alt="" style="display:inline;height: 100px;"></h1>
+        <div class="row">
+            <div data-aos="fade-left" class="col-sm-12 p-xs-5 col-md-10 offset-md-2 col-lg-6 offset-lg-6">
+                <div class="card mb-3 bg-color3" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-8 d-flex justify-content-center align-items-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Dead<span class="text-danger">Tale</span> <span
+                                        class="text-warning">Reborn</span></h5>
+                                <p class="card-text">Online Multiplayer Arcade Undertale Fangame</p>
+                                <div class="tools">
+                                    <div class="row d-flex justify-content-center align-items-center">
+                                        <div class="col-2">
+                                            <img class="img-fluid" src="./img/c-sharp-logo.png" alt="">
+                                            <h5 class="fw-lighter">C#</h5>
+                                        </div>
+                                        <div class="col-2">
+                                            <img class="img-fluid" src="./img/unity-logo.png" alt="">
+                                            <h5 class="fw-lighter">Unity</h5>
+                                        </div>
+                                        <div class="col-2">
+                                            <img class="img-fluid" src="./img/aseprite-logo.png" alt="">
+                                            <h6 class="fw-lighter">Aseprite</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">Roles: Lead Artist, Programmer</p>
+                                <a class="btn btn-success" href="https://gamejolt.com/games/DeadTaleR/466161"
+                                    target="_blank" class="btn">GameJolt Page</a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 order-first order-md-last">
+                            <img src="./img/game1.png" class="card-img e0" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col-sm-12 p-xs-5 col-md-10  col-lg-6">
+                <div class="card mb-3 bg-color3" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./img/app1-2.png" class="card-img e1" alt="...">
+                        </div>
+                        <div class="col-md-8 d-flex justify-content-center align-items-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Akinator App</h5>
+                                <p class="card-text">Akinator inspired prediction app for a supermarket.</p>
+                                <div class="tools">
+                                    <div class="row d-flex justify-content-center align-items-center">
+                                        <div class="col-2">
+                                            <img class="img-fluid" src="./img/java-logo.png" alt="">
+                                            <h5 class="fw-lighter">JAVA</h5>
+                                        </div>
+                                        <div class="col-2">
+                                            <img class="img-fluid" src="./img/android studio logo.png" alt="">
+                                            <h5 class="fw-lighter">ANDROID STUDIO</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">Roles: Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-left" class="col-sm-12 p-xs-5 col-md-10 offset-md-2 col-lg-6 offset-lg-6">
+                <div class="card mb-3 bg-color3" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-8 d-flex justify-content-center align-items-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Bad FNF KnockOff</h5>
+                                <p class="card-text">Interactive Friday Night Funkin Simulator</p>
+                                <div class="tools">
+                                    <div class="row d-flex justify-content-center align-items-center">
+                                        <div class="col-2">
+                                            <img class="img-fluid" src="./img/java-logo.png" alt="">
+                                            <h5 class="fw-lighter">JAVA</h5>
+                                        </div>
+                                        <div class="col-2">
+                                            <img class="img-fluid" src="./img/android studio logo.png" alt="">
+                                            <h5 class="fw-lighter">ANDROID STUDIO</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">Roles: Developer</p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 order-first order-md-last">
+                            <img src="./img/app2.png" class="card-img e2" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col-sm-12 p-xs-5 col-md-10  col-lg-6">
+                <div class="card mb-3 bg-color3" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./img/game2.gif" class="card-img e1" alt="...">
+                        </div>
+                        <div class="col-md-8 d-flex justify-content-center align-items-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Cross It</h5>
+                                <p class="card-text">Crossing the road game inspired by Frogger and Crossy Road</p>
+                                <div class="tools">
+                                    <div class="row d-flex justify-content-center align-items-center">
+                                        <div class="col-2">
+                                            <img class="img-fluid" src="./img/c-sharp-logo.png" alt="">
+                                            <h5 class="fw-lighter">C#</h5>
+                                        </div>
+                                        <div class="col-2">
+                                            <img class="img-fluid" src="./img/unity-logo.png" alt="">
+                                            <h5 class="fw-lighter">Unity</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">Roles: Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-dark bg-stripped">
+        <section id="skills" class=" min-vh-100 color2  container">
+            <h1 data-aos="fade-up" class="fw-lighter text-center pb-5">These are the tools I've used along the way</h1>
+            <div class="row r1">
+                <h1 data-aos="fade-up" class="fw-lighter pb-2 text-left">Web Tools</h1>
+                <div data-aos="flip-left" class="col-md-3 text-center r1" style="color:#ff5722;">
+                    <img src="./img/html-logo.png" class="img-fluid h-50 mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                                role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">70%</h3>
+                    </div>
+                    <h2 class="fw-lighter">HTML5</h2>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="100" data-aos-anchor="#skills .r1 .r1"
+                    class="col-md-3 text-center" style="color:#71b2de;">
+                    <img src="./img/CSS3-Logo.png" class="img-fluid h-50 mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">40%</h3>
+                    </div>
+                    <h2 class="fw-lighter">CSS3</h2>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="200" data-aos-anchor="#skills .r1 .r1"
+                    class="col-md-3 text-center" style="color:#7911f7;">
+                    <img src="./img/Bootstrap-logo.png" class="img-fluid h-50 mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">70%</h3>
+                    </div>
+                    <h2 class="fw-lighter">BOOTSTRAP</h2>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="300" data-aos-anchor="#skills .r1 .r1"
+                    class="col-md-3 text-center" style="color:#f6a2ad;">
+                    <img src="./img/materialize-logo.png" class="img-fluid h-50 mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
+                                role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">40%</h3>
+                    </div>
+                    <h2 class="fw-lighter">MATERIALIZE</h2>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="400" data-aos-anchor="#skills .r1 .r1"
+                    class="col-md-3 text-center" style="color:#f0db4f;">
+                    <img src="./img/JavaScript-logo.png" class="img-fluid h-50 rounded  mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                                role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">50%</h3>
+                    </div>
+                    <h2 class="fw-lighter">JAVASCRIPT</h2>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="500" data-aos-anchor="#skills .r1 .r1"
+                    class="col-md-3 text-center" style="color:#61dbfb;">
+                    <img src="./img/react-logo.png" class="img-fluid h-50 rounded  mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">20%</h3>
+                    </div>
+                    <h2 class="fw-lighter">REACT</h2>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+
+            <div class="row r2">
+                <h1 data-aos="fade-up" class="fw-lighter pb-2 text-left">Programming Languages</h1>
+                <div data-aos="flip-left" class="col-md-3 text-center r2" style="color:#a179dc;">
+                    <img src="./img/c-sharp-logo.png" class="img-fluid h-50 mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">60%</h3>
+                    </div>
+                    <h2 class="fw-lighter">C#</h2>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="100" data-aos-anchor="#skills .r2 .r2"
+                    class="col-md-3 text-center" style="color:#659bd3;">
+                    <img src="./img/cpp-logo.png" class="img-fluid h-50 mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">40%</h3>
+                    </div>
+                    <h2 class="fw-lighter">C++</h2>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="200" data-aos-anchor="#skills .r2 .r2"
+                    class="col-md-3 text-center" style="color:#5382a1;">
+                    <img src="./img/java-logo.png" class="img-fluid h-50 mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">40%</h3>
+                    </div>
+                    <h2 class="fw-lighter">JAVA</h2>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="300" data-aos-anchor="#skills .r2 .r2"
+                    class="col-md-3 text-center" style="color:#136099;">
+                    <img src="./img/Vb-logo.png" class="img-fluid h-50 mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">30%</h3>
+                    </div>
+                    <h2 class="fw-lighter">VISUAL BASIC</h2>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="400" data-aos-anchor="#skills .r2 .r2"
+                    class="col-md-3 text-center" style="color:#f0db4f;">
+                    <img src="./img/JavaScript-logo.png" class="img-fluid h-50 rounded  mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                                role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">50%</h3>
+                    </div>
+                    <h2 class="fw-lighter">JAVASCRIPT</h2>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="500" data-aos-anchor="#skills .r2 .r2"
+                    class="col-md-3 text-center" style="color:#f0db4f;">
+                    <img src="./img/python-logo.png" class="img-fluid h-50 rounded  mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                                role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">20%</h3>
+                    </div>
+                    <h2 class="fw-lighter">PYTHON</h2>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+
+            <div class="row r3">
+                <h1 data-aos="fade-up" class="fw-lighter pb-2 text-left">Other Tools</h1>
+                <div data-aos="flip-left" class="col-md-3 text-center r3 text-white">
+                    <img src="./img/unity-logo.png" class="img-fluid h-50 mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated"
+                                role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">40%</h3>
+                    </div>
+                    <h2 class="fw-lighter">Unity</h2>
+                    <h4 class="fw-lighter">Game Engine</h4>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="100" data-aos-anchor="#skills .r3 .r3"
+                    class="col-md-3 text-center" style="color:#46e187;">
+                    <img src="./img/android studio logo.png" class="img-fluid h-50 mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                                role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">40%</h3>
+                    </div>
+                    <h2 class="fw-lighter">Android Studio</h2>
+                    <h4 class="fw-lighter">Android IDE</h4>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="200" data-aos-anchor="#skills .r3 .r3"
+                    class="col-md-3 text-center text-white dt">
+                    <img src="./img/aseprite-logo.png" class="img-fluid h-50 mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated"
+                                role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">80%</h3>
+                    </div>
+                    <h2 class="fw-lighter">Aseprite</h2>
+                    <h4 class="fw-lighter">Sprite Editor</h4>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="300" data-aos-anchor="#skills .r3 .r3"
+                    class="col-md-3 text-center" style="color:#31a8ff;">
+                    <img src="./img/photoshop-logo.png" class="img-fluid h-50 mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">50%</h3>
+                    </div>
+                    <h2 class="fw-lighter">Photoshop</h2>
+                    <h4 class="fw-lighter">Image Editor</h4>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="400" data-aos-anchor="#skills .r3 .r3"
+                    class="col-md-3 text-center" style="color:#f0db4f;">
+                    <img src="./img/MySQL-logo.png" class="img-fluid h-50 rounded  mb-4" alt="">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped  progress-bar-animated" role="progressbar"
+                                style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h3 class="fw-lighter px-1">50%</h3>
+                    </div>
+                    <h2 class="fw-lighter">MySQL</h2>
+                    <h4> </h4>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="wrapper">
+        <section id="art" class="content min-vh-100 text-white container dt">
+            <div class="row">
+                <h1 data-aos="fade-up" class="text-center pb-5">Here is some of my art and animation</h1>
+                <h2 data-aos="fade-up" class="text-left">Small</h2>
+                <div class="row gy-5">
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/sm1.png" alt="">
+                        <div class="double"><img src="./img/sm1.png" alt=""></div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/sm2.png" alt="">
+                        <div class="double">
+                            <img src="./img/sm2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/sm3.gif" alt="">
+                        <div class="double">
+                            <img src="./img/sm3.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/sm4.gif" alt="">
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/sm5.gif" alt="">
+                        <div class="double">
+                            <img src="./img/sm5.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/sm6.gif" alt="">
+                        <div class="double">
+                            <img src="./img/sm6.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/sm7.gif" alt="">
+                        <div class="double">
+                            <img src="./img/sm7.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/sm8.gif" alt="">
+                        <div class="double">
+                            <img src="./img/sm8.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/sm10.gif" alt="">
+                        <div class="double">
+                            <img src="./img/sm10.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/sm11.gif" alt="">
+                        <div class="double">
+                            <img src="./img/sm11.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <h2 data-aos="fade-right" class="text-left">Medium</h2>
+                <div class="row g-5">
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/md1.gif" alt="">
+                        <div class="double"><img src="./img/md1.gif" alt=""></div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/md2.gif" alt="">
+                        <div class="double">
+                            <img src="./img/md2.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/md3.gif" alt="">
+                        <div class="double">
+                            <img src="./img/md3.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <img src="./img/md4.png" alt="">
+                        <div class="double">
+                            <img src="./img/md4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <div class="double">
+                            <img src="./img/md5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end justify-content-center">
+                        <div class="double">
+                            <img src="./img/md-6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <h2 data-aos="fade-right" class="text-left">Large (clickable)</h2>
+                <div class="row g-5">
+                    <div class="col-md-4 ">
+                        <img src="./img/art-1.png" alt="" class="img-fluid rounded clickable">
+                    </div>
+                    <div class="col-md-4 ">
+                        <img src="./img/art-2.png" alt="" class="img-fluid rounded clickable">
+                    </div>
+                    <div class="col-md-4 ">
+                        <img src="./img/art-3.png" alt="" class="img-fluid rounded clickable">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="shadow-wrap background h-50 w-100">
+            <div class="box bg-dark bg-stripped w-100">
+            </div>
+        </div>
+        <div class="shadow-wrap-end background-end h-50 w-100">
+            <div class="inverted-box bg-dark bg-stripped w-100">
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-dark bg-stripped container-fluid dt">
+        <section id="aboutme"
+            class="min-vh-100  text-center text-white container d-flex flex-column align-items-center justify-content-center">
+            <h1 data-aos="fade-up">Who I am</h1>
+            <p class="lead">My name is Johandry López</p>
+            <p class="lead">
+                I'm a Software Engineering student from Venezuela, interested in game development. I started as a pixel
+                artist before joining the development side.
+                I have learned the basics of programming languages such as C++, Java, VB, Python, and am currently
+                focusing on learning C# for Unity. I'm constantly getting more knowledge and improving my skills.
+            </p>
+            <p class="lead">
+                I like the idea of working with a team and sharing knowledge and experience between partners.
+            </p>
+            <h1 data-aos="fade-uo">Certificates</h1>
+            <p class="lead">FreeCodeCamp - Responsive Web Design</p>
+            <a href="https://www.freecodecamp.org/certification/darkaro/responsive-web-design" target="_blank"
+                class="btn btn-success">View Certificate</a>
+            <p class="lead">FreeCodeCamp - Javascript Algorithms and Data Structure</p>
+            <a href="https://www.freecodecamp.org/certification/darkaro/javascript-algorithms-and-data-structures"
+                target="_blank" class="btn btn-success">View Certificate</a>
+        </section>
+    </div>
+
+
+    <footer class="bg-dark text-center text-white">
+
+        <div class="container p-4">
+
+            <section class="mb-4">
+
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.codewars.com/users/DarKaRo"
+                    target="_blank" role="button"><i class="fas fa-code"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/DarKaRor" target="_blank"
+                    role="button"><i class="fab fa-github"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://learn.unity.com/u/5fefdf35edbc2a6a432f494a?tab=profile" target="_blank"
+                    role="button"><i class="fab fa-unity"></i></a>
+            </section>
+
+            <section class="mb-4">
+                <p>
+                    You can contact me at jalp_18@hotmail.com
+                </p>
+            </section>
+    
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+           Made by DarKaRo
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+    <script src="./js/games.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
